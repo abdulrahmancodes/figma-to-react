@@ -4,9 +4,9 @@ import "./index.scss";
 
 const ToggleSwitch = (props) => {
   return (
-    <label class="toggle-switch">
+    <label className="toggle-switch">
       <input type="checkbox" {...props} />
-      <span class="slider round"></span>
+      <span className="slider round"></span>
     </label>
   );
 };
