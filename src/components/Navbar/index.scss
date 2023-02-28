@@ -19,7 +19,40 @@
 
   @media (max-width: 900px) {
     top: 35px;
-    margin: 0 30px;
+    width: 300px;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    display: none;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-dark);
+    z-index: 10;
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 2px;
+      background-color: var(--color-dark);
+      transform: translateY(-8px);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 2px;
+      background-color: var(--color-dark);
+      transform: translateY(6px);
+    }
+
+    @media (max-width: 900px) {
+      display: block;
+    }
   }
 
   &__logo {

@@ -7,6 +7,10 @@
 
   &--extra-margin {
     margin-left: calc(50vw - 500px);
+
+    @media (max-width: 900px) {
+      padding: 0 25px;
+    }
   }
 
   @media (max-width: 900px) {
@@ -17,10 +21,27 @@
     gap: 0;
   }
 
+  &--extra-margin {
+    @media (max-width: 900px) {
+      padding: 0 25px;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1180px) {
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-between;
+  }
+
   p {
     font-weight: 400;
     font-size: 12px;
     color: var(--color-light);
+    min-width: max-content;
+
+    @media (max-width: 900px) {
+      margin: 10px auto 0;
+    }
 
     a {
       text-decoration: none;
