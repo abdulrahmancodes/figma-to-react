@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
 
+import FlyoutMenu from "../FlyoutMenu";
 import Button from "../../DesignSystem/button";
 
 import DashboardIcon from "../../assets/icons/dashboard.svg";
@@ -18,54 +19,66 @@ import DarkLogo from "../../assets/icons/logo-dark.svg";
 import "./index.scss";
 
 const Navbar = ({ isDark }) => {
-  return (
-    <nav
-      className={cx("navbar", {
-        "navbar--dark": isDark,
-      })}
-    >
-      <div className="navbar__logo">
-        <img src={isDark ? DarkLogo : Logo} alt="logo" />
-        <h3>Vandelay Industries</h3>
-      </div>
+  const [isFlyoutMenuOpen, setIsFlyoutMenuOpen] = useState(false);
 
-      <ul className="navbar__nav-links">
-        <li>
-          <img
-            src={isDark ? DarkDashboardIcon : DashboardIcon}
-            alt="dashboard"
-          />
-          <Link to="/" className="navbar__nav-links__link">
-            Dashboard
-          </Link>
-        </li>
-        <li>
-          <img src={isDark ? DarkProfileIcon : ProfileIcon} alt="profile" />
-          <Link to="/" className="navbar__nav-links__link">
-            Profile
-          </Link>
-        </li>
-        <li>
-          <img src={isDark ? DarkSignUp : SignUp} alt="sign-up" />
-          <Link to="/sign-up" className="navbar__nav-links__link">
-            Sign Up
-          </Link>
-        </li>
-        <li>
-          <img src={isDark ? DarkSignIn : SignIn} alt="sign-in" />
-          <Link to="/sign-in" className="navbar__nav-links__link">
-            Sign In
-          </Link>
-        </li>
-      </ul>
-      <Button
-        className="navbar__download-btn"
-        width={155}
-        color={isDark ? "dark" : "white"}
+  return (
+    <>
+      {isFlyoutMenuOpen && (
+        <FlyoutMenu close={() => setIsFlyoutMenuOpen(false)} />
+      )}
+
+      <nav
+        className={cx("navbar", {
+          "navbar--dark": isDark,
+        })}
       >
-        Free Download
-      </Button>
-    </nav>
+        <div className="navbar__logo">
+          <img src={isDark ? DarkLogo : Logo} alt="logo" />
+          <h3>Vandelay Industries</h3>
+        </div>
+        <div
+          className="hamburger-menu"
+          onClick={() => setIsFlyoutMenuOpen(true)}
+        ></div>
+
+        <ul className="navbar__nav-links">
+          <li>
+            <img
+              src={isDark ? DarkDashboardIcon : DashboardIcon}
+              alt="dashboard"
+            />
+            <Link to="/" className="navbar__nav-links__link">
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <img src={isDark ? DarkProfileIcon : ProfileIcon} alt="profile" />
+            <Link to="/" className="navbar__nav-links__link">
+              Profile
+            </Link>
+          </li>
+          <li>
+            <img src={isDark ? DarkSignUp : SignUp} alt="sign-up" />
+            <Link to="/sign-up" className="navbar__nav-links__link">
+              Sign Up
+            </Link>
+          </li>
+          <li>
+            <img src={isDark ? DarkSignIn : SignIn} alt="sign-in" />
+            <Link to="/sign-in" className="navbar__nav-links__link">
+              Sign In
+            </Link>
+          </li>
+        </ul>
+        <Button
+          className="navbar__download-btn"
+          width={155}
+          color={isDark ? "dark" : "white"}
+        >
+          Free Download
+        </Button>
+      </nav>
+    </>
   );
 };
 
