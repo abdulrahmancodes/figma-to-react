@@ -51,7 +51,7 @@ const SignIn = () => {
               SIGN IN
             </Button>
             <p className="sign-in__form__sign-up-link">
-              Don't have an account? <Link href="/sign-up">Sign up</Link>
+              Don't have an account? <Link to="/sign-up">Sign up</Link>
             </p>
           </div>
         </div>
