@@ -3,14 +3,15 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
+import Input from "../../DesignSystem/input";
+import ToggleSwitch from "../../DesignSystem/ToggleSwitch";
+import Button from "../../DesignSystem/button";
+
 import Wave1 from "../../assets/icons/vertical-wave-1.svg";
 import Wave2 from "../../assets/icons/vertical-wave-2.svg";
 import Chakra from "../../assets/icons/chakra.svg";
 
 import "./index.scss";
-import Input from "../../DesignSystem/input";
-import ToggleSwitch from "../../DesignSystem/ToggleSwitch";
-import Button from "../../DesignSystem/button";
 
 const SignIn = () => {
   return (
