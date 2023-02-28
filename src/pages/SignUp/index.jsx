@@ -9,7 +9,9 @@ import Wave2 from "../../assets/icons/wave-2.svg";
 import Input from "../../DesignSystem/input";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+
 import Button from "../../DesignSystem/button";
+import ToggleSwitch from "../../DesignSystem/ToggleSwitch";
 
 import "./index.scss";
 
@@ -65,10 +67,7 @@ const SignUp = () => {
               </div>
             </div>
             <div class="sign-up__form__toggle-wrapper">
-              <label class="sign-up__form__remember-me-toggle">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
+              <ToggleSwitch />
               <span className="remember-me">Remember me</span>
             </div>
             <Button isLessRounded isLarge>
