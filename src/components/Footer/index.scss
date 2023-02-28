@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20%;
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-light);
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 52px;
+
+    a {
+      font-weight: 400;
+      font-size: 12px;
+      color: var(--color-light);
+    }
+  }
+}
