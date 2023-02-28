@@ -66,7 +66,7 @@ const SignUp = () => {
                 />
               </div>
             </div>
-            <div class="sign-up__form__toggle-wrapper">
+            <div className="sign-up__form__toggle-wrapper">
               <ToggleSwitch />
               <span className="remember-me">Remember me</span>
             </div>
