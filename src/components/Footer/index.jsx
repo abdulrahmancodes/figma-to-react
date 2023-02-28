@@ -1,10 +1,15 @@
 import React from "react";
+import cx from "classnames";
 
 import "./index.scss";
 
-const Footer = () => {
+const Footer = ({ isSignInPage }) => {
   return (
-    <footer className="footer">
+    <footer
+      className={cx("footer", {
+        "footer--extra-margin": isSignInPage,
+      })}
+    >
       <p className="footer__made-by">
         © 2022, Made with ❤️ by <a href="">Tektorch</a> for a better web
       </p>
