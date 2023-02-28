@@ -1,0 +1,45 @@
+.flyout-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background-color: var(--color-white);
+  padding: 100px 30px;
+
+  &__close-btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  &__download-btn {
+    margin-top: 50px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    line-height: 0;
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-dark);
+    text-decoration: none;
+    line-height: 15px;
+    min-width: max-content;
+  }
+}
