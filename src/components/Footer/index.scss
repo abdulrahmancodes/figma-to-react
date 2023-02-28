@@ -4,6 +4,12 @@
   justify-content: space-between;
   padding: 0 20%;
 
+  @media (max-width: 900px) {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
   p {
     font-weight: 400;
     font-size: 12px;
@@ -19,6 +25,13 @@
   &__links {
     display: flex;
     gap: 52px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      gap: unset;
+    }
 
     a {
       font-weight: 400;
