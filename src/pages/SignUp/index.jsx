@@ -9,6 +9,7 @@ import Wave2 from "../../assets/icons/wave-2.svg";
 import Input from "../../DesignSystem/input";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Button from "../../DesignSystem/button";
 
 import "./index.scss";
 
@@ -70,7 +71,9 @@ const SignUp = () => {
               </label>
               <span className="remember-me">Remember me</span>
             </div>
-            <button className="sign-up__form__submit-btn">Sign Up</button>
+            <Button isLessRounded isLarge>
+              SIGN UP
+            </Button>
             <p className="sign-up__form__login-link">
               Already have an account? <a href="/">Sign in</a>
             </p>

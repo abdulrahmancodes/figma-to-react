@@ -6,6 +6,8 @@ import SignUp from "../../assets/icons/signup.svg";
 import SignIn from "../../assets/icons/sign-in.svg";
 import Logo from "../../assets/icons/logo.svg";
 
+import Button from "../../DesignSystem/button";
+
 import "./index.scss";
 
 const Navbar = () => {
@@ -42,8 +44,9 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-
-      <button className="navbar__download-btn">Free Download</button>
+      <Button className="navbar__download-btn" width={155} color="white">
+        Free Download
+      </Button>
     </nav>
   );
 };
