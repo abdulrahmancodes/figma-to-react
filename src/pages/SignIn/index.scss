@@ -1,0 +1,142 @@
+.sign-in {
+  display: flex;
+  overflow-y: hidden;
+  margin: auto;
+
+  @media (min-width: 900px) {
+    width: 800px;
+  }
+
+  @media (min-width: 1100px) {
+    width: 987.5px;
+  }
+
+  &__right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 44.89%;
+    height: 80vh;
+    background-color: var(--color-primary);
+    border-bottom-left-radius: 15px;
+    margin-left: 239px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .chakra-icon {
+      width: 357.5px;
+      height: 91.82px;
+      margin-top: 100px;
+      z-index: 10;
+    }
+
+    .vertical-wave {
+      position: absolute;
+      // width: 1598px;
+      width: 83.22vw;
+      // height: 799px;
+      height: 80vh;
+      // left: -44%;
+      // bottom: 0px;
+
+      &-1 {
+        left: -44%;
+        bottom: 0px;
+      }
+
+      &-2 {
+        left: -44%;
+        bottom: -30px;
+      }
+    }
+  }
+
+  &__left {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    z-index: 10;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 8.5px;
+    color: var(--color-primary);
+    text-align: left;
+  }
+
+  &__subtext {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-light);
+    text-align: left;
+    margin-bottom: 36px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &__input-fields {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 24px;
+
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-dark);
+
+        @media (max-width: 900px) {
+          font-size: 11px;
+        }
+      }
+    }
+
+    &__input-field-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__toggle-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 24px 0 36px;
+    }
+
+    .remember-me {
+      font-weight: 400;
+      font-size: 12px;
+      color: var(--color-dark);
+
+      @media (max-width: 900px) {
+        font-size: 10px;
+      }
+    }
+
+    &__sign-up-link {
+      margin-top: 22px;
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--color-light);
+      text-align: center;
+
+      @media (max-width: 900px) {
+        font-size: 11px;
+      }
+
+      a {
+        color: var(--color-primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+}
