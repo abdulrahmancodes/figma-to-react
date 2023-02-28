@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import FacebookIcon from "../../assets/icons/fb.svg";
 import GoogleIcon from "../../assets/icons/google.svg";
@@ -74,7 +75,7 @@ const SignUp = () => {
               SIGN UP
             </Button>
             <p className="sign-up__form__login-link">
-              Already have an account? <a href="/">Sign in</a>
+              Already have an account? <Link to="/sign-in">Sign in</Link>
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import cx from "classnames";
 
 import Button from "../../DesignSystem/button";
@@ -34,27 +35,27 @@ const Navbar = ({ isDark }) => {
             src={isDark ? DarkDashboardIcon : DashboardIcon}
             alt="dashboard"
           />
-          <a href="" className="navbar__nav-links__link">
+          <Link to="/" className="navbar__nav-links__link">
             Dashboard
-          </a>
+          </Link>
         </li>
         <li>
           <img src={isDark ? DarkProfileIcon : ProfileIcon} alt="profile" />
-          <a href="" className="navbar__nav-links__link">
+          <Link to="/" className="navbar__nav-links__link">
             Profile
-          </a>
+          </Link>
         </li>
         <li>
           <img src={isDark ? DarkSignUp : SignUp} alt="sign-up" />
-          <a href="" className="navbar__nav-links__link">
+          <Link to="/sign-up" className="navbar__nav-links__link">
             Sign Up
-          </a>
+          </Link>
         </li>
         <li>
           <img src={isDark ? DarkSignIn : SignIn} alt="sign-in" />
-          <a href="" className="navbar__nav-links__link">
+          <Link to="/sign-in" className="navbar__nav-links__link">
             Sign In
-          </a>
+          </Link>
         </li>
       </ul>
       <Button

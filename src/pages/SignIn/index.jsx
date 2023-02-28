@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -50,7 +51,7 @@ const SignIn = () => {
               SIGN IN
             </Button>
             <p className="sign-in__form__sign-up-link">
-              Don't have an account? <a href="/">Sign up</a>
+              Don't have an account? <Link href="/sign-up">Sign up</Link>
             </p>
           </div>
         </div>
