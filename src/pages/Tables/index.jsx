@@ -11,9 +11,9 @@ import "./index.scss";
 const Tables = () => {
   return (
     <div className="tables">
-      <SidebarMenu />
+      <SidebarMenu page="Tables" />
       <div className="tables__main">
-        <Header />
+        <Header page="Tables" />
         <AuthorsTable />
         <Projects />
         <Footer />

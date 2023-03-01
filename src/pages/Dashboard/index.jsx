@@ -67,9 +67,9 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard">
-        <SidebarMenu />
+        <SidebarMenu page="Dashboard" />
         <div className="dashboard__main">
-          <Header />
+          <Header page="Dashboard" />
           <div className="dashboard__first-row">
             {DASHBOARD_FIRST_ROW_ITEMS.map((item, i) => (
               <div key={i} className="dashboard__first-row__grid-item">
