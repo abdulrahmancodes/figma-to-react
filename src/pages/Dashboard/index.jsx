@@ -21,10 +21,10 @@ import Tick from "../../assets/icons/tick.svg";
 import ThreeDots from "../../assets/icons/three-dots.svg";
 
 import XD from "../../assets/icons/xd.svg";
-import Jira from "../../assets/icons/Jira.svg";
+import Jira from "../../assets/icons/jira.svg";
 import Slack from "../../assets/icons/slack.svg";
 import In from "../../assets/icons/in.svg";
-import Spotify from "../../assets/icons/Spotify.svg";
+import Spotify from "../../assets/icons/spotify.svg";
 import Atlassin from "../../assets/icons/atlassin.svg";
 
 import Member1 from "../../assets/icons/members1.png";
