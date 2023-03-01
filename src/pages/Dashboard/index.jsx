@@ -22,7 +22,7 @@ import ThreeDots from "../../assets/icons/three-dots.svg";
 
 import XD from "../../assets/icons/xd.svg";
 import Jira from "../../assets/icons/Jira.svg";
-import Slack from "../../assets/icons/Slack.svg";
+import Slack from "../../assets/icons/slack.svg";
 import In from "../../assets/icons/in.svg";
 import Spotify from "../../assets/icons/Spotify.svg";
 import Atlassin from "../../assets/icons/atlassin.svg";
