@@ -14,7 +14,7 @@ const Header = () => {
         <p className="breadcrumb">
           Pages <span>/ Dashboard</span>
         </p>
-        <h5 className="dashboard__heading">Dashboard</h5>
+        <h5 className="header__heading">Dashboard</h5>
       </div>
       <div className="header__right">
         <label htmlFor="search" className="search-wrapper">

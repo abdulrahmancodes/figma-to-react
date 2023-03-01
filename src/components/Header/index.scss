@@ -3,6 +3,23 @@
   align-items: flex-start;
   justify-content: space-between;
 
+  .breadcrumb {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-light);
+
+    span {
+      color: var(--color-dark);
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 5.5px 0 29px;
+    color: var(--color-dark);
+  }
+
   &__right {
     display: flex;
     align-items: center;
