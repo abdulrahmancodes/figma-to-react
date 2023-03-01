@@ -6,9 +6,9 @@ import { PROJECTS } from "../../constants/projects";
 import ProgressBar from "../../DesignSystem/ProgressBar";
 
 import XD from "../../assets/icons/xd.svg";
-import Jira from "../../assets/icons/Jira.svg";
-import Slack from "../../assets/icons/Slack.svg";
-import Spotify from "../../assets/icons/Spotify.svg";
+import Jira from "../../assets/icons/jira.svg";
+import Slack from "../../assets/icons/slack.svg";
+import Spotify from "../../assets/icons/spotify.svg";
 import Atlassin from "../../assets/icons/atlassin.svg";
 import ThreeDots from "../../assets/icons/three-dots.svg";
 import Tick from "../../assets/icons/tick.svg";
