@@ -7,6 +7,7 @@ import SignUp from "./pages/SignUp";
 
 import "./index.css";
 import Dashboard from "./pages/Dashboard";
+import Tables from "./pages/Tables";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/tables",
+    element: <Tables />,
   },
 ]);
 
