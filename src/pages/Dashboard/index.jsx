@@ -3,6 +3,10 @@ import cx from "classnames";
 
 import Footer from "../../components/Footer";
 import SidebarMenu from "../../components/SidebarMenu";
+import LineChart from "../../components/LineChart";
+import BarChart from "../../components/BarChart";
+import ProgressBar from "../../DesignSystem/ProgressBar";
+import Header from "../../components/Header";
 
 import Doc from "../../assets/icons/doc-white.svg";
 import Wallet from "../../assets/icons/wallet.svg";
@@ -35,17 +39,14 @@ import BlueCart from "../../assets/icons/cart-blue.svg";
 import Dropbox from "../../assets/icons/dropbox.svg";
 import YellowWallet from "../../assets/icons/yellow-wallet.svg";
 
-import "./index.scss";
 import {
   DASHBOARD_FIRST_ROW_ITEMS,
   ORDERS,
   PROJECTS,
   USER_STATS,
 } from "../../constants/dashboard";
-import LineChart from "../../components/LineChart";
-import BarChart from "../../components/BarChart";
-import ProgressBar from "../../DesignSystem/ProgressBar";
-import Header from "../../components/Header";
+
+import "./index.scss";
 
 const Dashboard = () => {
   const firstRowImages = useMemo(() => [Wallet, Globe, Doc, Cart], []);
@@ -69,13 +70,6 @@ const Dashboard = () => {
         <SidebarMenu />
         <div className="dashboard__main">
           <Header />
-          {/* <div>
-            <p className="breadcrumb">
-              Pages <span>/ Dashboard</span>
-            </p>
-            <h5 className="dashboard__heading">Dashboard</h5>
-          </div> */}
-
           <div className="dashboard__first-row">
             {DASHBOARD_FIRST_ROW_ITEMS.map((item, i) => (
               <div key={i} className="dashboard__first-row__grid-item">
@@ -218,9 +212,7 @@ const Dashboard = () => {
                     </div>
                     <div className="project__members">
                       {project.members.map((member, idx) => (
-                        // <div key={idx} className="project__members__member">
                         <img src={memberImages[idx]} alt="" key={idx} />
-                        // </div>
                       ))}
                     </div>
                     <div className="project__budget">{project.budget}</div>
