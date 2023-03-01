@@ -7,14 +7,14 @@ import Person from "../../assets/icons/person 2.svg";
 
 import "./index.scss";
 
-const Header = () => {
+const Header = ({ page }) => {
   return (
     <div className="header">
       <div className="header__left">
         <p className="breadcrumb">
-          Pages <span>/ Dashboard</span>
+          Pages <span>/ {page}</span>
         </p>
-        <h5 className="header__heading">Dashboard</h5>
+        <h5 className="header__heading">{page}</h5>
       </div>
       <div className="header__right">
         <label htmlFor="search" className="search-wrapper">

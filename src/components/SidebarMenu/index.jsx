@@ -6,9 +6,11 @@ import Button from "../../DesignSystem/button";
 
 import DarkLogo from "../../assets/icons/logo-dark.svg";
 import Dashboard from "../../assets/icons/home.svg";
+import DashboardPrimary from "../../assets/icons/home-primary.svg";
 import Billing from "../../assets/icons/card-primary.svg";
 import RTL from "../../assets/icons/settings-primary.svg";
 import Tables from "../../assets/icons/chart-primary.svg";
+import WhiteTables from "../../assets/icons/chart.svg";
 import Profile from "../../assets/icons/profile-svg.svg";
 import SignIn from "../../assets/icons/doc-primary.svg";
 import SignUp from "../../assets/icons/rocket-primary.svg";
@@ -17,19 +19,19 @@ import Help from "../../assets/icons/help.svg";
 
 import "./index.scss";
 
-const SidebarMenu = () => {
+const SidebarMenu = ({ page }) => {
   const links = useMemo(() => {
     return [
       {
         name: "Dashboard",
         path: "/dashboard",
-        icon: Dashboard,
+        icon: page === "Dashboard" ? Dashboard : DashboardPrimary,
         isActive: true,
       },
       {
         name: "Tables",
         path: "/tables",
-        icon: Tables,
+        icon: page === "Tables" ? WhiteTables : Tables,
       },
       {
         name: "Billing",
@@ -42,7 +44,7 @@ const SidebarMenu = () => {
         icon: RTL,
       },
     ];
-  }, []);
+  }, [page]);
 
   const accountLinks = useMemo(() => {
     return [
@@ -79,7 +81,7 @@ const SidebarMenu = () => {
             key={i}
             to={link.path}
             className={cx("sidebar-menu__links__link", {
-              "sidebar-menu__links__link--active": link.isActive,
+              "sidebar-menu__links__link--active": page === link.name,
             })}
           >
             <div>
