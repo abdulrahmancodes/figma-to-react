@@ -3,8 +3,22 @@
   margin-left: 298px;
   padding-bottom: 20px;
 
+  @media (max-width: 900px) {
+    margin-left: 0;
+    padding-bottom: 0;
+    padding: 30px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 10px;
+  }
+
   &__main {
     padding: 22.5px 22px 0 0;
+
+    @media (max-width: 900px) {
+      padding: 0px;
+    }
   }
   .footer {
     margin: 0;

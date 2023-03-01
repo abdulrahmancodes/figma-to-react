@@ -26,43 +26,45 @@ const AuthorsTable = () => {
         <span>Employed</span>
         <span></span>
       </div>
-      {AUTHORS_TABLE.map((item, i) => (
-        <div
-          key={i}
-          className={cx("authors-table__row", {
-            "authors-table__row--last": AUTHORS_TABLE.length === i + 1,
-          })}
-        >
-          <div className="authors-table__author-details">
-            <img
-              src={authorImages[i]}
-              alt={item.author.name}
-              className="authors-table__author-details__image"
-            />
-            <div className="authors-table__author-details__name">
-              <strong>{item.author.name}</strong>
-              <span>{item.author.email}</span>
-            </div>
-          </div>
-
-          <div className="authors-table__function">
-            <strong>{item.function.role}</strong>
-            <span>{item.function.subText}</span>
-          </div>
-
-          <span
-            className={cx("authors-table__status", {
-              "authors-table__status--offline": !item.isOnline,
+      <div className="authors-table__wrapper">
+        {AUTHORS_TABLE.map((item, i) => (
+          <div
+            key={i}
+            className={cx("authors-table__row", {
+              "authors-table__row--last": AUTHORS_TABLE.length === i + 1,
             })}
           >
-            {item.isOnline ? "Online" : "Offline"}
-          </span>
+            <div className="authors-table__author-details">
+              <img
+                src={authorImages[i]}
+                alt={item.author.name}
+                className="authors-table__author-details__image"
+              />
+              <div className="authors-table__author-details__name">
+                <strong>{item.author.name}</strong>
+                <span>{item.author.email}</span>
+              </div>
+            </div>
 
-          <strong className="authors-table__date">{item.date}</strong>
+            <div className="authors-table__function">
+              <strong>{item.function.role}</strong>
+              <span>{item.function.subText}</span>
+            </div>
 
-          <span className="authors-table__edit">Edit</span>
-        </div>
-      ))}
+            <span
+              className={cx("authors-table__status", {
+                "authors-table__status--offline": !item.isOnline,
+              })}
+            >
+              {item.isOnline ? "Online" : "Offline"}
+            </span>
+
+            <strong className="authors-table__date">{item.date}</strong>
+
+            <span className="authors-table__edit">Edit</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

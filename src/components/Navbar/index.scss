@@ -19,8 +19,12 @@
 
   @media (max-width: 900px) {
     top: 35px;
-    width: 300px;
+    width: 85%;
     justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
   }
 
   .hamburger-menu {
@@ -59,6 +63,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 
     @media (max-width: 900px) {
       gap: 9px;
@@ -141,6 +146,11 @@
     border-radius: 15px;
     padding: 17.5px 24px;
     top: 24px;
+    z-index: 100;
+
+    @media (max-width: 900px) {
+      width: 90%;
+    }
 
     .navbar__nav-links {
       a {

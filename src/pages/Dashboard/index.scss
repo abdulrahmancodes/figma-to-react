@@ -2,6 +2,11 @@
   background-color: var(--color-background);
   padding-bottom: 20px;
   margin-left: 298px;
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    padding-bottom: 0;
+  }
 }
 
 .dashboard {
@@ -10,6 +15,14 @@
 
   &__main {
     padding: 22.5px 22px 0 0;
+
+    @media (max-width: 1200px) {
+      padding: 30px;
+    }
+
+    @media (max-width: 400px) {
+      padding: 10px;
+    }
 
     .footer {
       margin: 0;
@@ -38,8 +51,15 @@
   &__first-row {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 382px));
-    gap: 0 24px;
+    max-width: calc(100vw - 298px);
+    overflow-y: scroll;
+    grid-template-columns: repeat(4, minmax(250px, 382px));
+    gap: 24px;
+
+    @media (max-width: 1200px) {
+      max-width: none;
+      grid-template-columns: 1fr;
+    }
 
     &__grid-item {
       padding: 17.5px 17.5px 17.5px 21.5px;
@@ -102,8 +122,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 0 24px;
+    gap: 24px;
     margin: 23.5px 0 24.5px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
 
     &__grid-item {
       height: 290.5px;
@@ -111,17 +135,29 @@
       box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
       border-radius: 15px;
       padding: 17.5px;
+
+      @media (max-width: 600px) {
+        height: unset;
+      }
     }
 
     &__first-grid-item {
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+
       &__left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 40%;
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
 
         @media (min-width: 1440) {
           width: 35%;
@@ -130,6 +166,10 @@
 
       &__right {
         width: 45%;
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
 
         @media (min-width: 1440) {
           width: 39%;
@@ -140,6 +180,11 @@
           height: 255.5px;
           object-fit: cover;
           border-radius: 12px;
+
+          @media (max-width: 600px) {
+            margin-top: 30px;
+            height: 150.5px;
+          }
         }
       }
 
@@ -169,6 +214,10 @@
         cursor: pointer;
         z-index: 1;
 
+        @media (max-width: 500px) {
+          margin-top: 20px;
+        }
+
         span {
           font-weight: 700;
           font-size: 12px;
@@ -193,6 +242,10 @@
       justify-content: space-between;
       padding: 20px 21.5px 17.5px;
       border-radius: 15px;
+
+      @media (max-width: 600px) {
+        height: 200px;
+      }
 
       .gradient-bg {
         position: absolute;
@@ -251,14 +304,22 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    gap: 0 24px;
+    gap: 24px;
     margin: 23.5px 0;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
 
     &__grid-item {
       height: 445px;
       background: var(--color-white);
       box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
       border-radius: 15px;
+
+      @media (max-width: 500px) {
+        height: unset;
+      }
     }
 
     &__first-grid-item {
@@ -295,6 +356,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width: 500px) {
+          gap: 20px;
+        }
 
         .stat-top {
           display: flex;
@@ -317,20 +383,6 @@
 
         .stat-progress-wrapper {
           margin-top: 10px;
-          //   width: 85px;
-          //   height: 5px;
-          //   border-radius: 5px;
-          //   background-color: var(--color-grey);
-
-          //   @media (min-width: 1500px) {
-          //     width: 100px;
-          //   }
-
-          //   .stat-progress {
-          //     height: 5px;
-          //     border-radius: 5px;
-          //     background-color: var(--color-primary);
-          //   }
         }
 
         .stat-icon {
@@ -387,8 +439,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 0 24px;
+    gap: 24px;
     margin-bottom: 23.5px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
 
     &__first-grid-item {
       padding: 28px 22.5px 31.5px;
@@ -433,6 +489,10 @@
       background: var(--color-white);
       box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
       border-radius: 15px;
+
+      @media (max-width: 600px) {
+        height: unset;
+      }
     }
 
     &__last-grid-item {
@@ -505,8 +565,14 @@
   }
 
   .projects {
+    @media (max-width: 600px) {
+      max-width: 300px;
+      overflow-y: scroll;
+    }
+
     &__header,
     &__row {
+      min-width: 600px;
       display: grid;
       grid-template-columns: 2.5fr 1fr 1fr 1fr;
       border-bottom: 1px solid var(--color-grey);

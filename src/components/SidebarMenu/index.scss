@@ -2,10 +2,14 @@
   min-width: 298px;
   padding: 44px 45px 44px 35px;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: var(--color-background);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 
   .divider {
     height: 1px;
@@ -22,6 +26,7 @@
     display: flex;
     align-items: center;
     padding-left: 7px;
+    cursor: pointer;
 
     img {
       width: 22px;
