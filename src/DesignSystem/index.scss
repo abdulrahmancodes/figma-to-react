@@ -57,10 +57,26 @@
 
 .toggle-switch {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 36px;
   height: 18.5px;
   margin-right: 10px;
+  cursor: pointer;
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-dark);
+    position: relative;
+    left: 46px;
+    min-width: max-content;
+    line-height: 18px;
+
+    @media (max-width: 900px) {
+      font-size: 10px;
+    }
+  }
 
   input {
     opacity: 0;
