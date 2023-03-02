@@ -71,6 +71,10 @@
     @media (max-width: 900px) {
       margin-top: 22vh;
     }
+
+    @media (max-width: 300px) {
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -99,6 +103,10 @@
   &__form {
     display: grid;
     grid-template-columns: 1fr;
+
+    @media (max-width: 300px) {
+      width: 280px;
+    }
 
     &__input-fields {
       display: flex;

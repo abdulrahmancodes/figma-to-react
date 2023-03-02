@@ -6,8 +6,9 @@
   top: 0;
   left: 0;
   background-color: var(--color-background);
+  overflow-y: scroll;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 
@@ -119,6 +120,7 @@
     background-color: var(--color-primary);
     position: relative;
     border-radius: 15px;
+    margin-top: 45.5px;
 
     .circles-image {
       position: absolute;

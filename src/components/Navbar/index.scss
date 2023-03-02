@@ -27,6 +27,10 @@
     width: 300px;
   }
 
+  @media (max-width: 300px) {
+    width: 200px;
+  }
+
   .hamburger-menu {
     display: none;
     width: 20px;
@@ -146,7 +150,7 @@
     border-radius: 15px;
     padding: 17.5px 24px;
     top: 24px;
-    z-index: 100;
+    z-index: 10;
 
     @media (max-width: 900px) {
       width: 90%;
