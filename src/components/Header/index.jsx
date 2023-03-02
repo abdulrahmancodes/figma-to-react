@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import SearchIcon from "../../assets/icons/search.svg";
 import Settings from "../../assets/icons/settings-grey.svg";
@@ -26,10 +27,10 @@ const Header = ({ page }) => {
             placeholder="Type here..."
           />
         </label>
-        <div className="header__sign-in">
+        <Link to="/sign-in" className="header__sign-in">
           <img src={Person} alt="" />
           <span>Sign In</span>
-        </div>
+        </Link>
         <img src={Settings} alt="settings" className="settings" />
         <img src={Bell} alt="notifications" className="notifications" />
       </div>
