@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 452.5px;
-  margin-left: calc(50vw - 524px);
+  margin-left: calc(50vw - 560px);
 
   &--extra-margin {
     margin-left: calc(50vw - 500px);
@@ -37,9 +37,16 @@
     font-size: 12px;
     color: var(--color-light);
     min-width: max-content;
+    line-height: 18px;
 
     @media (max-width: 900px) {
       margin: 10px auto 0;
+    }
+
+    @media (max-width: 300px) {
+      min-width: auto;
+      width: 250px;
+      text-align: center;
     }
 
     a {
