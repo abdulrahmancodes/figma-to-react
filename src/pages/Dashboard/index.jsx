@@ -56,7 +56,7 @@ const Dashboard = () => {
     []
   );
   const memberImages = useMemo(
-    () => [Member1, Member2, Member3, Member4, Member5],
+    () => [Member1, Member2, Member3, Member5, Member4],
     []
   );
   const orderImages = useMemo(
