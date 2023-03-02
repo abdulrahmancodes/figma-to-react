@@ -13,8 +13,8 @@ export const DASHBOARD_FIRST_ROW_ITEMS = [
   },
   {
     title: "New Clients",
-    value: "$53,000",
-    change: "+3,052",
+    value: "+3,052",
+    change: "-14%",
     hasIncreased: false,
   },
   {
