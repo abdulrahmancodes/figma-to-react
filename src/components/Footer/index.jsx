@@ -11,7 +11,7 @@ const Footer = ({ isSignInPage }) => {
       })}
     >
       <p className="footer__made-by">
-        © 2022, Made with ❤️ by <a href="">Tektorch</a> for a better web
+        © 2023, Made with ❤️ by <a href="">Abdul Rahman</a> for a better web
       </p>
       <div className="footer__links">
         <a href="">About Us</a>
