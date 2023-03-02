@@ -48,7 +48,6 @@ const SignUp = () => {
               <div className="sign-up__form__input-field-wrapper">
                 <label htmlFor="name">Name</label>
                 <Input id="name" placeholder="Your full name" />
-                {/* <input type="text" id="name" placeholder="Your full name" /> */}
               </div>
               <div className="sign-up__form__input-field-wrapper">
                 <label htmlFor="email">Email</label>
