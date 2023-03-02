@@ -44,8 +44,7 @@ const SignIn = () => {
               </div>
             </div>
             <div className="sign-in__form__toggle-wrapper">
-              <ToggleSwitch />
-              <span className="remember-me">Remember me</span>
+              <ToggleSwitch label="Remember me" />
             </div>
             <Button isLessRounded isLarge>
               SIGN IN
