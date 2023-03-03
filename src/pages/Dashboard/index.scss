@@ -454,6 +454,10 @@
     &__first-grid-item {
       padding: 28px 22.5px 31.5px;
 
+      @media (max-width: 400px) {
+        padding: 22px 18px;
+      }
+
       &__top {
         display: flex;
         justify-content: space-between;
